@@ -8,6 +8,8 @@ public abstract class Employee {
     }
 
     public int getSalary(int month){return (month==this.birthMonth ?0:100);}
+    public String getName(){return name;}
+    public abstract String getEmployeeType();
     protected int birthMonth;
     protected String name;
 }

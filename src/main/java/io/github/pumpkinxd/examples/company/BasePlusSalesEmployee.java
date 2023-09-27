@@ -9,7 +9,12 @@ public class BasePlusSalesEmployee extends SalesEmployee{
         return BasicSalary+super.getSalary(month);
     }
 
-    public BasePlusSalesEmployee(int birthMonth, String name, int saleAmount, int commissionRate, int basicSalary) {
+    @Override
+    public String getEmployeeType() {
+        return "有底薪的销售";
+    }
+
+    public BasePlusSalesEmployee(int birthMonth, String name, int saleAmount, double commissionRate, int basicSalary) {
         super(birthMonth, name, saleAmount, commissionRate);
         BasicSalary = basicSalary;
     }

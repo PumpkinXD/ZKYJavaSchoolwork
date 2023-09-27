@@ -8,6 +8,11 @@ public class SalariedEmployee extends Employee {
         return SalaryPerMonth+super.getSalary(month);
     }
 
+    @Override
+    public String getEmployeeType() {
+        return "月薪工";
+    }
+
     public SalariedEmployee(int birthMonth, String name, int salaryPerMonth) {
         super(birthMonth, name);
         SalaryPerMonth = salaryPerMonth;
