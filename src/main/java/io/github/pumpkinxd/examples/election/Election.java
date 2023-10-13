@@ -29,7 +29,7 @@ public class Election {
     }
     public void displayWinner(){
         Candidate winner= Collections.max(Candidates);
-        System.out.println("Candidate No."+Candidates.indexOf(winner)+" "+winner.getName()+"won the election with the most votes ("+winner.getVotes()+")");
+        System.out.println("Candidate No."+Candidates.indexOf(winner)+" "+winner.getName()+" won the election with the most votes ("+winner.getVotes()+")");
     }
     public void addAVote(int candidateIndex){
         Candidates.get(candidateIndex).addOneVote();
