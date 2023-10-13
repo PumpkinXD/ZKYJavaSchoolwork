@@ -15,6 +15,7 @@ public interface ElectionTest {
         //voting part
         Scanner scanner=new Scanner(System.in);
         for (int i = 0; i < voters; i++) {
+            System.out.println();
             election.displayAllCandidatesWithVotes();
             System.out.print("\ntype candidate's ID to vote:");
             try {
