@@ -14,7 +14,7 @@ public class Player {
     public String show(){
         StringBuilder stringBuilder=new StringBuilder();
         for (String card:holding) {
-        stringBuilder.append(card).append(" ");
+        stringBuilder.append('\n').append(card).append(" ");
         }
         return stringBuilder.toString();
     }

@@ -31,8 +31,8 @@ public class PokerCardsStack {
             }
         }
         Collections.shuffle(cards);
-        System.out.println(cards);
-        System.out.println(cards.size());
+        //System.out.println(cards);
+        //System.out.println(cards.size());
     }
 
     ArrayList<String> cards;
@@ -42,13 +42,15 @@ public class PokerCardsStack {
         }
     }
     public String pop(){
-        String card=cards.get(cards.size()-1);
+        String card=new String(cards.get(cards.size()-1));
         cards.remove(cards.size()-1);
         return card;
     }
     public void push(String card){
         cards.add(card);
     }
+    public int howmanycardsarethere(){return cards.size();}
+
 
 
     public static void main(String[] args) {
